@@ -1,7 +1,7 @@
 import pygame as pg
 import numpy as np
 import cv2
-import random
+from config import *
 
 class Map:
     def __init__(self, width, height, scale, offset):
@@ -35,10 +35,12 @@ class Map:
 
     def click(self, x,y):
         #if a cell is clicked on, it needs to update in the array of the class
+        l = HEIGHT//SCALER
         if self.grid_array[x][y] == 0:
             self.grid_array[x][y] = 1
         else: 
             self.grid_array[x][y] = 0
+
 
     def num_ones(self):
         #counts the number of on cells in the array, will change in future to allow button clicking instead

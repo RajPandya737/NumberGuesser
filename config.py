@@ -3,7 +3,7 @@ WIDTH = 560
 HEIGHT = 560
 FPS = 30
 SCALER = 20
-OFFSET = 2
+OFFSET = 1
 
 
 #Colours

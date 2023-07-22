@@ -102,23 +102,33 @@ class Game:
         return model
 
     def compute_number(self):
-        #this is the image number, useful if a user decides to use the program multiple times
-        image_number = self.Grid.get_num()-1
-        #loads the model
-        model = self.machine_learning()
-        #sets up the window message
-        window = Tk()
-        window.eval('tk::PlaceWindow %s center' % window.winfo_toplevel())
-        window.withdraw()
+        # This is the image number, useful if a user decides to use the program multiple times
+        image_number = self.Grid.get_num() - 1
 
         try:
-            img = cv2.imread(f"img{image_number}.png")[:,:,0]
-            img = np.invert(np.array([img]))
-            prediction = model.predict(img)
-            #shows the prediction
-            print(f'is your number a {np.argmax(prediction)}')
-        except:
-            print(f'An error has occured, please try again')
+            # Loads the model
+            model = self.machine_learning()
+
+            # Sets up the window message
+            window = Tk()
+            window.eval('tk::PlaceWindow %s center' % window.winfo_toplevel())
+            window.withdraw()
+
+            try:
+                img_path = f"img{image_number}.png"
+                img = cv2.imread(img_path)[:, :, 0]
+                if img is None:
+                    raise ValueError(f"Unable to read the image: {img_path}")
+
+                img = np.invert(np.array([img]))
+                prediction = model.predict(img)
+                # Shows the prediction
+                print(f'Is your number a {np.argmax(prediction)}')
+            except Exception as e:
+                print(f'An error has occurred: {e}')
+        except Exception as e:
+            print(f'Error loading the model: {e}')
+
 
 
 

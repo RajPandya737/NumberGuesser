@@ -68,7 +68,7 @@ class Game:
                 self.clicked_squares.append((i,j))
 
                 self.Grid.click(i,j)
-                print(self.Grid.num_ones())
+                #print(self.Grid.num_ones())
 
             
     
@@ -116,7 +116,7 @@ class Game:
             img = np.invert(np.array([img]))
             prediction = model.predict(img)
             #shows the prediction
-            print(f'is your number a {np.argmax(prediction)}'))
+            print(f'is your number a {np.argmax(prediction)}')
         except:
             print(f'An error has occured, please try again')
 

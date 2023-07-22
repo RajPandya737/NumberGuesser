@@ -116,13 +116,10 @@ class Game:
             img = np.invert(np.array([img]))
             prediction = model.predict(img)
             #shows the prediction
-            messagebox.showinfo('Number', f'is your number a {np.argmax(prediction)}')
-            window.deiconify()
-            window.destroy()
-            window.quit()
+            print(f'is your number a {np.argmax(prediction)}'))
         except:
-            messagebox.showerror('ERROR', f'An error has occured, please try again')
-            print('error')
+            print(f'An error has occured, please try again')
+
 
 
     def main(self):

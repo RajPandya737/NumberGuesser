@@ -2,6 +2,8 @@
 
 This repository contains a program that allows users to draw digits on a screen using Pygame, and then uses a trained neural network (TensorFlow) to guess the drawn digit with up to 97% accuracy. The program also utilizes OpenCV and Tkinter for handling image processing and graphical user interface, respectively.
 
+![image](https://github.com/RajPandya737/NumberGuesser/assets/99134716/725b34dd-c2c1-4883-93bc-76a15bb92057)
+
 ## Prerequisites
 
 Before running the program, ensure you have the following libraries installed:
@@ -9,12 +11,13 @@ Before running the program, ensure you have the following libraries installed:
 - Pygame
 - TensorFlow
 - OpenCV
+- Numpy
 - Tkinter (usually comes with Python)
 
 You can install these libraries using `pip`, make sure python is installed on your machine:
 
 ```bash
-pip install pygame tensorflow opencv-python
+pip install pygame tensorflow opencv-python numpy
 ```
 
 ## Getting Started

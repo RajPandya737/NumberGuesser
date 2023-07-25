@@ -14,6 +14,5 @@ model.add(tf.keras.layers.Dense(128, activation='relu'))
 model.add(tf.keras.layers.Dense(10, activation='softmax'))
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 model.fit(x_train, y_train, epochs=20)
-model.save('training.model')
-
-model = tf.keras.models.load_model('training.model')
+model.save('training.h5')
+#this is the model that was generated, and is used in the main.py file

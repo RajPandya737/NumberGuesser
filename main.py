@@ -81,7 +81,7 @@ class Game:
 
     def machine_learning(self):
         # Loads the ML model
-        model = tf.keras.models.load_model('training.model')
+        model = tf.keras.models.load_model('training.h5')
         return model
 
     def compute_number(self):

@@ -2,7 +2,7 @@
 
 This repository contains a program that allows users to draw digits on a screen using Pygame, and then uses a trained neural network (TensorFlow) to guess the drawn digit with up to 97% accuracy. The program also utilizes OpenCV and Tkinter for handling image processing and graphical user interface, respectively.
 
-![2023-07-24 19-30-59 (online-video-cutter com)](https://github.com/RajPandya737/NumberGuesser/assets/99134716/94f4b524-0c79-4479-b16c-5ec7f36a56b1)
+![ezgif com-gif-maker](https://github.com/RajPandya737/NumberGuesser/assets/99134716/913e43d8-96f6-4130-ab5e-68de0aa66e6b)
 
 
 ## Prerequisites

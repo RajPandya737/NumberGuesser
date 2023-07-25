@@ -1,6 +1,6 @@
 # Handwritten Digit Recognition using Neural Network
 
-This repository contains a program that allows users to draw digits on a screen using Pygame, and then uses a trained neural network (TensorFlow) to guess the drawn digit with up to 97% accuracy. The program also utilizes OpenCV and Tkinter for handling image processing and graphical user interface, respectively.
+This repository contains a program that allows users to draw digits on a screen using Pygame, and then uses a trained neural network (TensorFlow) to guess the drawn digit with up to 99.8% accuracy. The program also utilizes OpenCV and Tkinter for handling image processing and graphical user interface, respectively.
 
 ![ezgif com-gif-maker](https://github.com/RajPandya737/NumberGuesser/assets/99134716/913e43d8-96f6-4130-ab5e-68de0aa66e6b)
 

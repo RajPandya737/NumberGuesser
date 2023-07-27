@@ -29,7 +29,7 @@ git clone https://github.com/RajPandya737/NumberGuesser.git
 ```
 2. Change to the project directory:
 ```bash
-cd NumberGuesser
+cd NumberGuesser/NumberGuesser
 ```
 3. Run the program:
 ```bash

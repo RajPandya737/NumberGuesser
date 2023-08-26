@@ -42,12 +42,12 @@ python main.py
 
 2. Draw a single digit (0-9) using your mouse on the drawing canvas.
 
-3. Press the enter key to let the neural network analyze the drawn digit, 'saved' will appear within the termianl to notify you if the image was saved.
+3. Press the enter key to let the neural network analyze the drawn digit, 'saved' will appear within the terminal to notify you if the image was saved.
 
-4. The predicted digit will be pn a window.
+4. A pop up will tell you what digit the model thinks you drew.
 
 ## Neural Network Model
 
-The neural network model used for handwritten digit recognition is trained on the MNIST dataset, which is a large database of handwritten digits and is capable of achieving up to 97% accuracy on the recognition task. 
+The neural network model used for handwritten digit recognition is trained on the MNIST dataset, which is a large database of handwritten digits
 
 The trained model is already included in the repository and will be loaded automatically when you run the program.
